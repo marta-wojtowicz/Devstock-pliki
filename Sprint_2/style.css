@@ -1,0 +1,700 @@
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    
+  }
+  :root {
+    --main-color-dark: #111928;
+    --main-color-light: #1F2A37;
+    --accent-color: #374151;
+    --accent-color2: #4B5563;
+    --font-color: #9CA3AF;
+    --font-color-h: #FFFFFF;
+    --font-color-p: #6B7280;
+    --accent-color-button: #1C64F2;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    min-height: 100vh;
+    width: 100%;
+    background: var(--main-color-dark);
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  body img {
+    height: auto;
+    object-fit: contain;
+  }
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 4em;
+    width: 90%;
+    padding: 2.03em 5em 0.53em 5em;
+    font-size: 0.875em;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .header-menu a {
+    text-decoration: none;
+    color: var(--font-color-h)
+  }
+  .logo {
+    font-size: 1.5em;
+    line-height: 150%;
+    font-weight: bolder;
+    color: var(--font-color-h);
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 1em;
+    margin: 0 5em;
+  }
+  .header-menu > div:nth-child(1) {
+    display: flex;
+  }
+  .header-login {
+    display: flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    gap: 1em;
+    flex-flow: row wrap;
+  }
+  .header-login p {
+    padding: 0.625em 0;
+  }
+  .blue-button {
+    border: 0.06em solid var(--accent-color-button);
+    background-color: var(--accent-color-button);
+    color: var(--font-color-h);
+    cursor: pointer;
+    border-radius: 0.5em;
+    font-size: 1em;
+    width: 11.375em;
+    height: 3em;
+    align-self: center;
+    margin-right: 1em;
+  }
+  .grey-button {
+    border: 0.06em  solid var(--font-color);
+    background-color: var(--main-color-light);
+    border-radius: 0.5em;
+    font-size: 1em;
+    line-height: 150%;
+    color: var(--font-color);
+    align-items: center;
+    margin: 1em 1em 1em 0;
+    width: 11.375em;
+    height: 3em;
+    cursor: pointer;
+  }
+  .butto-transparent {
+    border: 0.06em  solid var(--accent-color2);
+    background-color: var(--main-color-light);
+    border-radius: 0.5em;
+    font-size: 1em;
+    line-height: 150%;
+    color: var(--font-color);
+    align-items: center;
+    cursor: pointer;
+    align-self: center;
+    height: 3em;
+  }
+  h1, h2, h3, h4 {
+      color: var(--font-color-h)
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 3em;
+    line-height: 125%;
+  }
+  h2 {
+    font-weight: 900;
+    font-size: 2.25em;
+    line-height: 125%;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 150%;
+    padding-top: 1em;
+  }
+  p {
+    color: var(--font-color);
+    line-height: 150%;
+    font-size: 1.25em;
+  }
+  .first-section {
+    padding: 6em 5em; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin: 0 5em;
+  }
+  .first-section > div {
+    width: 50%;
+    display: inline;
+  }
+  .discription {
+    padding-right: 2.75em;
+  }
+  .discription > p {
+    padding: 1.25em 0 2em;
+  }
+  .divider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 0.06em;
+    background-color: var(--accent-color);
+    margin: 2em 0;
+  }
+  .carousel {
+    background-image: url(images/Carousel.png);
+    background-size: cover;
+    margin: 2.3em 0 2.3em 5.25em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sponsors-logo {
+    display: flex;  
+    flex-wrap: nowrap;
+    min-height: 5.415vw;
+    margin: 0.75em 0;
+    justify-content: space-between;
+    }
+  .social-proof {
+    padding: 0 13em 6em;
+    display:flex;
+    flex-direction: row;  
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .social-proof > div {
+    padding: 1.5em 1em;
+    display: flex;
+    background-color: var(--main-color-light);
+    border-radius: 0.5em ;
+    border: 0.06em solid var(--accent-color);
+  }
+  .social-proof-box {
+    width: 15.5em;
+    height: 4.31em;
+    align-items: center;
+    row-gap: 1.875em;
+    border-left: 0.06em solid var(--accent-color);
+  }
+  .social-proof-box p {
+    font-size: 1em;
+  }
+  .social-proof > div :first-child {
+    border: none;
+  }
+  .social-proof-box h3 {
+    font-size: 2.25em;
+    line-height: 125%;
+    font-weight: 900;
+  }
+  .secend-section {
+    padding: 0 4em 5.875em;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 5em;
+  }
+  .secend-section-row {
+    display: flex;
+    height: 25.4em;
+    margin-bottom: 4em;
+    align-content: center;
+  }
+  .secend-section-image-1 {
+    width: 40%;
+    background-image: url("images/Mockup1.png");
+    background-size: cover;
+    border-radius: 0.5em;
+  }
+  .secend-section-image-2 {
+    width: 40%;
+    background-image: url("images/Mockup2.png");
+    background-size: cover;
+    border-radius: 0.5em;
+  }
+  .secend-section-image-3 {
+    width: 40%;
+    background-image: url("images/Mockup3.png");
+    background-size: cover;
+    border-radius: 0.5em;
+  }
+  .secend-section-discription {
+    width: 60%;
+    padding: 3em 1.25em 3em 5em;
+  }
+  .secend-section-discription2 {
+    width: 60%;
+    padding: 3em 3.75 em 3em 0;
+    justify-content: center;
+  }
+  .secend-section-discription > p {
+    padding: 1.5em 0;
+  }
+  .secend-section-discription2 > p {
+    padding: 1.5em 0;
+  }
+  .customer-logos {
+    padding: 6em 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color-light);
+  }
+  .customer-logos-discription {
+    text-align: center;
+    padding-bottom: 4em;
+    width: 42em;
+    justify-self: center;
+    display: inline-block;
+  }
+  .customer-logos-discription p {
+    padding: 1em 0 ;
+  }
+  .customer-logos-discription a {
+    text-decoration: none;
+    color: var(--accent-color-button);
+  }
+  .customer-logos-discription a > img {
+    vertical-align: middle;
+  }
+  button img {
+    vertical-align: middle;
+    padding: 0.6em;
+  }
+  .customer-logos-row {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    height: fit-content;
+    margin-bottom: 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .customer-logos-row div {
+    width: 18em;
+    align-items: center;
+  }
+  .customer-logos-row p {
+    padding: 1.25em 0;
+  }
+  .fundraising-events {
+    padding: 6em 5em;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .fundraising-events-cards {
+    column-gap: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .fundraising-events-cards > div {
+    width: 50%;
+    padding: 2em;
+    background-color: var(--main-color-light);
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+  }
+  .fundraising_image1 {
+    background-image: url(images/Fundraising2.png);
+    background-size: cover;
+    border-radius: 0.5em;
+    height: 18em;
+    margin-bottom: 1em;
+  }
+  .fundraising_image2 {
+    background-image: url(images/Fundraising1.png);
+    background-size: cover;
+    border-radius: 0.5em;
+    height: 18em;
+    margin-bottom: 1em;
+  }
+  .fundraising-line {
+    border-bottom: 0.625em solid var(--accent-color);
+    display: flex;
+    column-gap: 0.5em;
+    justify-content: space-between;
+  }
+  .fundraising-blue-line-1 {
+    background-color: var(--accent-color-button);
+    width: 85%;
+    height: 0.625em;
+    position: relative;
+    top: -0.625em;
+  }
+  .fundraising-blue-line-2 {
+    background-color: var(--accent-color-button);
+    width: 50%;
+    height: 0.625em;
+    position: relative;
+    top: -0.625em;
+  }
+  .fundraising-line p {
+    font-size: 0.75em;
+  }
+  .fundraising-line-h4 {
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 150%;
+    color: var(--font-color-h);
+  }
+  .fundraising-line-p {
+    font-size: 0.875em;
+    color: var(--font-color-p);
+  }
+  .fundraising-discription > p {
+    margin: 1em 0;
+    font-size: 1em;
+  }
+  .fundraising-events >:last-child > a {
+    text-decoration: none;
+    color: var(--accent-color-button);
+    font-size: 1.125em;
+  }
+  .contact {
+    padding: 6em 5em;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-form input {
+    background-color: var(--accent-color);
+    font-size: 1em;
+    color: var(--font-color);
+    line-height: 150%;
+    width: 100%;
+    margin-bottom: 1.5em;
+    border-radius: 0.5em;
+    padding: 0.875em 1em;
+  }
+  .contact-form label {
+    color: var(--font-color-h);
+    font-size: 0.875em;
+    line-height: 150%;
+    margin-bottom: 0.75em;
+  }
+  #input-message {
+    height: 10.125em;
+  }
+  footer {
+  display: inline;
+  width: 100%;
+  padding: 96 80 64 80;
+  background-color: var(--main-color-light);
+  }
+  .footer-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  }
+  .footer-nav {
+    display: inline-block;  
+    height: flex;
+    width: 13.8em;
+    margin-bottom: 4em;
+  }
+  .footer-nav a {
+    text-decoration: none;
+    color: var(--accent-color-font);
+  }
+  .footer-nav p {
+    padding: 0.5em 0;
+    font-size: 1em;
+  }
+  .footer-nav h3 {
+    padding: 0.5em 0;
+    font-size: 0.875em;
+  }
+  .container-social-media div {
+    display: flex;
+    justify-content: center;
+    padding: 20 0;
+  }
+  .container-social-media a {
+    padding: 0 0.72em;
+  }
+  .container-social-media p {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.875em;
+  }
+  @media (max-width: 1920px) {
+    body {
+      max-width: 100%;
+    }}
+  @media(max-width:64em) {
+    body {
+      justify-content: center;
+      max-width: 1024px;
+      margin: 0 calc(48%-12.3em);
+    }
+    .nav {
+      display: none;
+    }
+    .header-login {
+      display: none;
+    }
+    .header-menu {
+      justify-content: space-between;
+      padding: 1.5em 1em 0 1.5em;
+      align-items: center;
+      width: 100%;
+    }
+    .header-menu::after {
+      content: url(images/icon-menu-hamburger.png);
+      cursor: pointer;
+    }
+    .logo {
+      margin: 0;
+      justify-items: self-start;
+      position: static;
+    }
+    .first-section {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2em 12em;
+      align-content: center;
+    }
+    .first-section > div {
+      width: 50vw;
+    }
+    .discription button {
+      width: 100%;
+      padding: 0
+    }
+    .discription {
+      padding: 0;
+    }
+    .carousel {
+      margin: 1 12.25em;
+      min-height: 29.78vw;
+    }
+    .social-proof {
+      margin: 4em 0;
+      padding: 0;
+    }
+    .social-proof-box {
+      width: 18vw;
+    }
+    .secend-section {
+      margin-bottom: 3em;
+      display: inline;
+      width: 100%;
+      padding-bottom: 2em;
+    }
+    .secend-section-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: fit-content;
+      margin-bottom: 0;
+    }
+    .secend-section-image-1 {
+      display: none;
+    }
+    .secend-section-image-2 {
+      display: none;
+    }
+    .secend-section-image-3 {
+      display: none;
+    }
+    .secend-section-discription2 {
+      height: fit-content;
+      padding: 2em 1em;
+      width: 55vw;
+    }
+    .secend-section-discription {
+      height: 100%;
+      padding: 0 1em;
+      width: 55vw;
+    }
+    .customer-logos {
+      width: 55vw;
+      margin: 0 auto;
+      justify-content: space-between;
+      text-align: center;
+      border-radius: 0.5em;
+      gap: 2em;
+      padding: 2em 1em;
+      margin-top: 1em;
+    }
+    .customer-logos-row div {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 42%;
+      align-content: center;
+      justify-content: center;
+      }
+    .customer-logos-row {
+      justify-content: space-between;
+      align-content: center;
+      row-gap: 1.5em;
+    }
+    .customer-logos-all-row {
+      display: inline-block;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .customer-logos-discription {
+      width: 55vw;
+      padding-bottom: 2em;
+    }
+    .fundraising-events-cards {
+      display: inline;
+  }
+  .fundraising-events {
+    padding: 2em 1em;
+  }
+  .fundraising-events-cards button {
+    width: 100%;
+    justify-items: center;
+  }
+  .fundraising-events-cards button:nth-of-type(1) {
+    margin-bottom: 1em;
+  }
+  .fundraising-events {
+    justify-content:center;
+}
+.fundraising-events-cards > div {
+  width: 55vw;
+  justify-items: center;
+  margin: 0 auto;
+  margin-bottom: 1em; 
+}
+.contact {
+  padding: 2em 1em;
+  width: 55vw;
+  margin: 0 auto;
+}
+.contact-form {
+  padding: 0 1em;
+}
+footer {
+  width: 55vw;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  padding: 2em 1em;
+  margin-top: 1em;
+}
+.footer-menu {
+  justify-content: flex-start;
+}
+.container-social-media p {
+  display: inline-block;
+}
+.container-social-media div {
+  display: flex;
+  justify-content: flex-start;
+}
+.sponsors-logo img {
+  max-width: 20%;
+}
+}
+@media(max-width:768px) {
+  html {
+    font-size: 14px;
+    }
+    body {
+      max-width: 480px;
+      margin: 0 auto;
+      width: 55vw;
+    }
+    .butto-transparent {
+      line-height: 100%;
+      font-size: 0.8em;
+    }
+    button img {
+      padding: 0.1em;
+    }
+    .logo .header-menu {
+      font-size: 1.7em;
+    }
+    .header-menu {
+      width: 95vw;
+    }
+    .social-proof-box h3 {
+      font-size: 1.9em;
+    }
+    .social-proof-box p {
+      font-size: 0.8em;
+    }
+    body img {
+      max-width: 75%;
+      max-height: 75%;
+    }
+}
+  @media(max-width:30em) and (min-width:20em) {
+    html {
+      font-size: 8px;
+      }
+    body {
+      max-width: 480px;
+      margin: 0 auto;
+      width: 55vw;
+      margin: 0 calc(48%-12.3em);
+    }
+    body img {
+      max-width: 45%;
+      max-height: 45%;
+    }
+    .header-menu {
+      width: 95vw;
+    }
+    .butto-transparent {
+      line-height: 100%;
+      font-size: 0.9em;
+    }
+    button img {
+      padding: 0.1em;
+    }
+    .header-menu::after img {
+      max-height: 40%;
+    }
+    .blue-button {
+      width: 9em;
+    }
+    .grey-button {
+      width: 8.5em;
+    }
+    .logo {
+      font-size: 2.5em;
+    }
+    .sponsors-logo img {
+      max-width: 40;
+    }
+    .container-social-media img {
+      max-height: 100%;
+    }
+
+  }
