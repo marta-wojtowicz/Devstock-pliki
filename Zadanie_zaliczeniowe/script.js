@@ -1,0 +1,1 @@
+import { rowData } from "./data.js";
